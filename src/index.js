@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, HashRouter} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
+console.log('hi')
 ReactDOM.render(
 <HashRouter>
     <App />, 
