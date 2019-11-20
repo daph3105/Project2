@@ -8,7 +8,8 @@ import Advice from './components/Advice';
 import ThisThatQuestion from './components/ThisThatQuestion';
 import ThisThatAnswer from './components/ThisThatAnswer';
 import DecideQuestion from './components/DecideQuestion';
-import DecideAnswer from './components/DecideAnswer';
+import OutTonight from './components/OutTonight';
+import EatAnswer from './components/EatAnswer';
 
 
 export class App extends Component {
@@ -25,7 +26,8 @@ export class App extends Component {
 <Route exact path="/this-that" render={() => <ThisThatQuestion/>} />
 <Route exact path="/answer2" render={() => <ThisThatAnswer/>} />
 <Route exact path="/decide" render={() => <DecideQuestion/>} />
-<Route exact path="/answer3" render={() => <DecideAnswer/>} />
+<Route exact path="/answer3" render={() => <OutTonight/>} />
+<Route exact path="/eat" render={() => <EatAnswer/>} />
 <Route exact path="/advice" render={() => <Advice/>} />
 
 

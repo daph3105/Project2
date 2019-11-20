@@ -4,7 +4,7 @@ import Dropdown from './Dropdown'
 
 const questions =[
   {question:"Should I go out tonight?", link:"/answer3"},
-  {question:"Second question?", link:"/answer2" },
+  {question:"I'm hungry, what should I eat?", link:"/eat" },
   {question:"Third question?", link:"/answer1"},
   {question: "Fourth question?", link:"/answer3"}]
 

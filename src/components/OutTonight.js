@@ -16,27 +16,34 @@ export class decideAnswer extends Component {
             }  
         }
 
+ 
     componentDidMount() {
-        axios.get('https://tv-v2.api-fetch.website/random/movie')
-        .then(response => {
-          this.setState({ randomMovie:response.data });
-        })
-        .catch(error => {
-          console.log(error);
-        });
+   
+        fetch('https://tv-v2.api-fetch.website/random/movie', {cache: "no-store"})
+        .then(response=>response.json())
+        .then(data=> this.setState({randomMovie:data}))
+        
+       
+        // axios.get('https://tv-v2.api-fetch.website/random/movie', {cache: "no-store"})
+        // .then(response => {
+        //   console.log(response, '-=-=-=-=')
+        //   this.setState({ randomMovie:response.data });
+        // })
+        // .catch(error => {
+        //   console.log(error);
+        // });
       }
 
     loadTrailerorNot = () =>{
       if(this.state.randomMovie.trailer!=null){
        trailer = this.state.randomMovie.trailer;          
        embededTrailer = trailer.replace("watch?v=", "embed/");
-        return <iframe src={embededTrailer} style={{width:"420", height:"315", borderRadius: "30%"}}  allowFullScreen> </iframe> 
+        return <iframe src={embededTrailer} style={{width:"420", height:"315", borderRadius: "30%"}}  
+        allowFullScreen> </iframe> 
                 }
         return <h3>Synopsis: {this.state.randomMovie.synopsis}</h3>
            }
-    
-    
-    
+       
     
     render() {
 
@@ -53,7 +60,7 @@ export class decideAnswer extends Component {
             </div> 
             </>
         )}
-        else return(<div>loading...</div>)
+        else return(<div>Loading...</div>)
     }
 }
 
