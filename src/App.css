@@ -1,0 +1,126 @@
+body{
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home{
+    display:flex;
+    justify-content: center;
+}
+.home-buttons{
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    justify-content: space-around;
+}
+.title h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+    margin-top:50px;
+    color:#0B3F01;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.guru-img1{
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    width:500px;
+}
+.answer-section{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top:100px;
+}
+.speech-image{
+    width:600px;
+    margin-right: 80px;
+    margin-bottom: 150px;
+}
+.response-container{
+    position:absolute;
+    top:200px;
+    left:550px;
+}
+
+.guru-img2{
+    width:200px;
+    margin-top:400px;
+}
+
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.question-section{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+/* // dropdown css starts */
+
+.dropdown-container{
+    width:200px;  
+    background-color: white;
+    height:40px;
+}
+  
+.dropdown-btn{
+    width:200px;
+    height:40px;
+    background-color: white;
+}
+
+.dropdown-list {
+    list-style-type: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    border: none;
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(black, .5);
+    z-index: 9;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+.option {
+    padding: 5px;
+    cursor: pointer;
+}
+.option:hover {
+    color: white;
+    background: #4db8ff;
+  }
+
+.arrow {
+    position: relative;
+}
+.arrow:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 5px 0 5px;
+      border-color: black transparent transparent transparent;
+      position: absolute;
+      right: 10px;
+      top: 7px;
+    }
+
+
+
+
+
+  
+
