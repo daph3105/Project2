@@ -53,7 +53,7 @@ export class decideAnswer extends Component {
                 }
         return <h3>Synopsis: {this.state.randomMovie.synopsis}</h3>
            }
-             
+
     
     render() {
       console.log(random)
@@ -82,9 +82,8 @@ export class decideAnswer extends Component {
         <GuruAnswerDesign/>
         <div className="response-container">
         <p>Yes, go out and have some fun</p>
-        <p>buy yourself a drink:</p>
-        <h3>{drink}</h3> 
-        <p> is a good option</p>     
+        <p>buy yourself a drink, I feel like you need a</p>
+        <h3>{drink}</h3>    
         <img src={drinkImage} style={{width:"200px"}}/>         
         </div> 
         </>
