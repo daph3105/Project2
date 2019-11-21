@@ -6,6 +6,7 @@ import axios from 'axios';
 let movieTitle;
 let trailer;
 let embededTrailer;
+let finalTrailerLink;
 let drink;
 let drinkImage;
 let randomNumber = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
@@ -41,14 +42,14 @@ export class decideAnswer extends Component {
             
       }     
      
- 
 
 
     loadTrailerorNot = () =>{
       if(this.state.randomMovie.trailer!=null){
        trailer = this.state.randomMovie.trailer;          
        embededTrailer = trailer.replace("watch?v=", "embed/");
-        return <iframe src={embededTrailer} style={{width:"420", height:"315", borderRadius: "30%"}}  
+       finalTrailerLink = embededTrailer.replace("http:", "https:")
+        return <iframe src={finalTrailerLink} style={{width:"420", height:"315", borderRadius: "30%"}}  
         allowFullScreen> </iframe> 
                 }
         return <h3>Synopsis: {this.state.randomMovie.synopsis}</h3>
