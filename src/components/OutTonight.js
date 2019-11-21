@@ -8,7 +8,7 @@ let trailer;
 let embededTrailer;
 let drink;
 let drinkImage;
-let random = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
+let randomNumber = Math.floor(Math.random() * (2 - 1 + 1)) + 1;
 
 export class decideAnswer extends Component {
 
@@ -56,8 +56,8 @@ export class decideAnswer extends Component {
 
     
     render() {
-      console.log(random)
-      if(random==1){
+      console.log(randomNumber)
+      if(randomNumber==1){
       if (this.state.randomMovie){
            movieTitle = this.state.randomMovie.title;
         return (
