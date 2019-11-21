@@ -2,6 +2,7 @@ body{
     /* background-image: url('/images/background.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment:fixed;
 }
 .home{
     display:flex;
@@ -79,6 +80,10 @@ body{
 .thisthat-container h4{
     width:600px;
 }
+.thisthat-container button{
+    margin-top:20px;
+    width:150px;
+}
 .thisthat-input-container{
     width:600px;
 }
@@ -88,6 +93,34 @@ body{
 }
 .thisthat-input-container span{
     margin-right: 10px;
+}
+
+.thisthat-answer{
+    display:flex;
+    flex-direction: column;
+    height:700px;
+    flex-wrap: wrap;
+    width:1000;
+  
+}
+.thisthat-answer button{
+    margin-top:20px;
+    width:150px;
+}
+.answer-input-container{
+    margin-top:40px;
+}
+
+#answer-image{
+    margin-top:350px;
+    margin-left:50px;
+    width:400px;
+    margin-right: 0;
+    
+}
+#bubble-answer{
+   margin:0;
+   width:600px;
 }
 /* // dropdown css starts */
 

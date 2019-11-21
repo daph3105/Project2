@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 console.log('hi')
 ReactDOM.render(
 <HashRouter>
-    <App />, 
+    <App /> 
 </HashRouter>,
 
 document.getElementById('root'));
