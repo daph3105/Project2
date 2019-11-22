@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import NavBarMobile from './NavBarMobile'
+import NavDesktop from './NavDesktop'
 
 
 let mealToEat;
@@ -34,6 +35,7 @@ export class EatAnswer extends Component {
         return (
             <>
             <NavBarMobile/>
+            <NavDesktop/>
             <div className="response-container">
             
             <h4 id="food-title" >Have some {mealToEat}</h4>

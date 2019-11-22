@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NavBarMobile from './NavBarMobile'
+import NavDesktop from './NavDesktop'
 
 import axios from 'axios';
 
@@ -64,6 +65,7 @@ export class decideAnswer extends Component {
         return (
             <>
            <NavBarMobile/>
+           <NavDesktop/>
             <div className="response-container">
             <p id="stay-home-text" >Nope, not a good idea...<br/>
               stay home and watch:</p>
@@ -84,6 +86,7 @@ export class decideAnswer extends Component {
       return (
         <>
         <NavBarMobile/>
+        <NavDesktop/>
         <div className="response-container">
         <p id="go-out-text" >Yes, go out and have some fun!<br/>
         buy yourself a drink, I feel like you need a...</p>

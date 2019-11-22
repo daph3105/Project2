@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Dropdown from "./Dropdown"
 import NavBarMobile from './NavBarMobile'
+import NavDesktop from './NavDesktop'
 
 
 const questions =[
@@ -29,6 +30,7 @@ export class YesNoQuestion extends Component {
         return (
             <>
              <NavBarMobile/>
+             <NavDesktop/>
             <section className="question-section">
             <img className="guru-img-question" src="./images/guru1.png"/>
             <span className="guru-word">Guru,</span>

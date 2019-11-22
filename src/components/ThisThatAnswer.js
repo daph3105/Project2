@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NavBarMobile from './NavBarMobile'
+import NavDesktop from './NavDesktop'
 
 
 
@@ -69,11 +70,10 @@ export class thisThatAnswer extends Component {
         return (
             <>
             <NavBarMobile/>
+            <NavDesktop/>
             
-
-            <div className="thisthat-answer">
             <img id="answer-image" src="./images/guru2.png"/>
-            
+            <div className="thisthat-answer">
             <h4 className="guru-pick-text">Guru, pick one for me:</h4>
             <p><i>Enter below two options, and the Guru will pick one for you:</i></p>
             <form onSubmit={this.mySubmitHandler}>

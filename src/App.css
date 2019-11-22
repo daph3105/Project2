@@ -18,6 +18,7 @@ body{
     top:0;
 }
 
+
 .home{
     display:flex;
     justify-content: center;
@@ -35,9 +36,9 @@ body{
 .home-h1 {
     font-size: 35px;
     width:70%;
-    margin-left:200px;
+    margin-left:250px;
     margin-right:auto;
-    margin-top:0;
+    margin-top:50px;
     color:black;
  }
 
@@ -45,7 +46,7 @@ body{
   height:50px;
   font-size: 35px;
   margin-top:20px;
-  margin-left:200px;
+  margin-left:250px;
   width:250px;
   color:black;
  }
@@ -131,14 +132,14 @@ body{
     justify-content: center;
     margin-top:130px;
 }
-.thisthat-container{
+/* .thisthat-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height:600px;
     margin-top:50px;
     align-content: center;
-}
+} */
 
 
 
@@ -156,9 +157,12 @@ body{
 .thisthat-answer{
     display:flex;
     flex-direction: column;
-    height:700px;
+    height:250px;
     flex-wrap: wrap;
-    width:1000;
+    width:600px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-left:40px;
   
 }
 .thisthat-answer button{
@@ -174,6 +178,7 @@ body{
     margin-left:150px;
     width:300px;
     margin-right: 0;
+    position:fixed;
     
     
 }
@@ -243,10 +248,12 @@ iframe{
 #synopsis{
     z-index:1;
     position:absolute;
+    height:200px;
     width:300px;
     font-size: 15px;
-    top:130px;
-    left:150px;
+    top:120px;
+    left:170px;
+    overflow: hidden;
 }
 #stay-home-text{
     z-index:1;
@@ -350,6 +357,9 @@ iframe{
     }
 
     @media only screen and (max-width: 600px) {
+        .menu{
+            visibility: hidden;
+        }
         .home-buttons{
            visibility: hidden;
         }
