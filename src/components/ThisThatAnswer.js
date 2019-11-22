@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios';
+
 
 
 
@@ -17,6 +17,7 @@ export class thisThatAnswer extends Component {
         option2:'',
         guruOption:'',
         randomGif:{},
+        bubble:false
             }  
         }
 
@@ -35,7 +36,7 @@ export class thisThatAnswer extends Component {
             finalUrl = urlPart1.concat(options[random],urlPart2)
             console.log(finalUrl)
             
-            fetch(finalUrl)
+            fetch(finalUrl, {cache: "no-store"})
             .then(response=>response.json())
             .then(data=> {
                 console.log(data.data)
@@ -51,21 +52,24 @@ export class thisThatAnswer extends Component {
     render() {
         let optionToShow = '';
         if (this.state.guruOption) {
-          optionToShow = <p style={{textTransform: 'capitalize'}}> {this.state.guruOption} is the best option </p>;
+          optionToShow = <p id="gif-text" style={{textTransform: 'capitalize'}}> {this.state.guruOption} is the best option! </p>;
         } else {
           optionToShow = '';
         }
         
         if (this.state.randomGif.data){
            
-            gifToShow = this.state.randomGif.data[0].images.original.url;
+            gifToShow = <img id="gif" src={this.state.randomGif.data[0].images.original.url}/> ;
+            }
+            else{
+                gifToShow='';
             }
 
         return (
             <div className="thisthat-answer">
             <img id="answer-image" src="./images/guru2.png"/>
             
-            <h4 className="answer-input-container">Guru, pick one for me:</h4>
+            <h4 className="guru-pick-text">Guru, pick one for me:</h4>
             <p><i>Enter below two options, and the Guru will pick one for you:</i></p>
             <form onSubmit={this.mySubmitHandler}>
             <div className="thisthat-input-container">
@@ -73,15 +77,25 @@ export class thisThatAnswer extends Component {
             <span>OR</span>
             <input type="text" name="option2" placeholder="Option 2" value={this.state.option2} onChange={this.setOptions}/>
             </div>
-            <button className="btn btn-primary" type="submit"> Pick Now </button>
+            <button className="btn btn-primary" type="submit" onClick={()=>{this.setState({bubble:true})}} > Pick Now </button>
             </form>
+            <div className="gif-container">    
             {optionToShow}
-            <img style={{width:"200px"}} src={gifToShow}/>
-            <img className="guru-img2" src="./images/guru2.png"/> 
-             <img id="bubble-answer" src="./images/baloon.png"/>
+            {gifToShow}
+            {this.state.bubble ? <img className="speech" src="./images/speech1.png"/>: null}
+            
+            </div>
+
+          
             </div>
         )
     }
 }
 
 export default thisThatAnswer
+
+
+
+  
+ 
+  

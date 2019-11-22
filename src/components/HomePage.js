@@ -24,7 +24,7 @@ export class HomePage extends Component {
     render() {
         return (
             <>
-      <Router >
+    
       <MDBContainer className="hamburger-menu" style={{backgroundColor:"#D43A39", padding:"10px"}}>
         <MDBNavbar color="amber lighten-4" style={{ marginTop: '0px' }} light>
           <MDBContainer>      
@@ -48,7 +48,7 @@ export class HomePage extends Component {
           </MDBContainer>
         </MDBNavbar>
       </MDBContainer>
-    </Router>
+   
            
             <h1 className="home-h1">Are you tired of making decisions on your own?</h1>
             <h2 className="home-h2">Ask the Guru!</h2>

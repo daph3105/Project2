@@ -24,13 +24,13 @@ export class YesorNo extends Component {
         return (
             <>
        
-            <div className="response-container">
-            <h1 style={{ textTransform: 'capitalize'}}>{this.state.randomAnswer.answer}...</h1>
-            <img src={this.state.randomAnswer.image} style={{maxWidth:"250px", borderRadius: "50%"}}/>
-            <img className="speech-image" src="./images/speech-bubble.png"/>
-            <img className="guru-img2" src="./images/guru2.png"/> 
+            <div className="response-container">    
+            <h1 id="yes-no-text" style={{ textTransform: 'capitalize'}}>{this.state.randomAnswer.answer}...</h1>
+            <img id="yes-no-image" src={this.state.randomAnswer.image} />
+            <img className="speech-image" src="./images/speech1.png"/>
             
             </div> 
+            <img className="guru-img2" src="./images/guru2.png"/> 
             </>
         )
     }

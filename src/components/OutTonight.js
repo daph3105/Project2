@@ -49,10 +49,9 @@ export class decideAnswer extends Component {
        trailer = this.state.randomMovie.trailer;          
        embededTrailer = trailer.replace("watch?v=", "embed/");
        finalTrailerLink = embededTrailer.replace("http:", "https:")
-        return <iframe src={finalTrailerLink} style={{width:"420", height:"315", borderRadius: "30%"}}  
-        allowFullScreen> </iframe> 
+        return <iframe src={finalTrailerLink} allowFullScreen> </iframe> 
                 }
-        return <h3>Synopsis: {this.state.randomMovie.synopsis}</h3>
+        return <h3 id="synopsis" >Synopsis: {this.state.randomMovie.synopsis}</h3>
            }
 
     
@@ -65,14 +64,13 @@ export class decideAnswer extends Component {
             <>
            
             <div className="response-container">
-            <p>Nope, not a good idea...</p>
-            <p>you should stay home and watch:</p>
-            <h3>{movieTitle}</h3>      
+            <p id="stay-home-text" >Nope, not a good idea...<br/>
+              stay home and watch:</p>
+            <h3 id="movie-title">{movieTitle}</h3>      
             {this.loadTrailerorNot()}
-            <img className="speech-image" src="./images/speech-bubble.png"/>
-            <img className="guru-img2" src="./images/guru2.png"/> 
-         
+            <img className="speech-image" src="./images/speech1.png"/>
             </div> 
+            <img className="guru-img2" src="./images/guru2.png"/> 
             </>
         )}
         else return(<div>Loading...</div>)
@@ -85,14 +83,13 @@ export class decideAnswer extends Component {
         <>
       
         <div className="response-container">
-        <p>Yes, go out and have some fun</p>
-        <p>buy yourself a drink, I feel like you need a</p>
-        <h3>{drink}</h3>    
-        <img className="speech-image" src="./images/speech-bubble.png"/>
-        <img className="guru-img2" src="./images/guru2.png"/> 
-
-        <img src={drinkImage} style={{width:"200px"}}/>         
+        <p id="go-out-text" >Yes, go out and have some fun!<br/>
+        buy yourself a drink, I feel like you need a...</p>
+        <h3 id="drink-text">{drink}</h3>    
+        <img className="speech-image" src="./images/speech1.png"/>
+        <img id="drink-image" src={drinkImage}/>         
         </div> 
+        <img className="guru-img2" src="./images/guru2.png"/> 
         </>
     )}
     else return(<div>Loading...</div>)

@@ -29,9 +29,10 @@ export class YesNoQuestion extends Component {
             <>
             <section className="question-section">
             <img className="guru-img1" src="./images/guru1.png"/>
-            <span>Guru,</span>
+            <span id="guru-word">Guru,</span>
             <Dropdown show={this.state.show} value={this.state.value} handleToggle={this.handleToggle} 
-            handleChange={this.handleChange} options={questions}/></section>   
+            handleChange={this.handleChange} options={questions}/>
+            </section>   
             </>
         )
     }
