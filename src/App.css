@@ -7,6 +7,9 @@ body{
     overflow: hidden;
     
 }
+.hamburger-menu{
+    visibility: hidden;
+}
 
 .home{
     display:flex;
@@ -16,17 +19,32 @@ body{
     display:flex;
     flex-direction: column;
     width:200px;
+    height:400px;
     justify-content: space-around;
+    margin-top:40px;
+    margin-left:0px;
 }
-.title h1{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%; 
-    margin-top:50px;
-    color:#0B3F01;
-    font-size: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif
-}
+
+.home-h1 {
+    font-size: 40px;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0;
+    color:black;
+ }
+
+ .home-h2{
+  height:50px;
+  font-size: 40px;
+  margin-top:20px;
+  margin-left:190px;
+  width:250px;
+  color:black;
+ }
+
+
+
 .guru-img1{
     -webkit-animation: mover 2s infinite  alternate;
     animation: mover 2s infinite  alternate;
@@ -184,7 +202,39 @@ body{
       top: 7px;
     }
 
+    @media only screen and (max-width: 600px) {
+        .home-buttons{
+           visibility: hidden;
+        }
+        .hamburger-menu{
+            visibility: visible;
+        }
+        .home{
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+        }
 
+        .guru-img1{
+           width:350px;
+           margin-right:100px;
+           margin-top:40px;
+           }
+           .home-h1 {
+              font-size: 20px;
+              width:80%;
+              margin-top:50px;
+            
+           }
+        
+           .home-h2{
+            height:50px;
+            margin-top:40px;
+            margin-left:100px;
+            width:200px;
+            font-size: 30px;
+           }
+      }
 
 
 
