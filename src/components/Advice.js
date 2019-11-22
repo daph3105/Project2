@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import GuruAnswerDesign from './GuruAnswerDesign.js'
+
 
 
 let advice;
@@ -37,9 +37,10 @@ export class Advice extends Component {
    
         return (
             <>
-                <GuruAnswerDesign/>
+               
                 <div className="response-container">
                 <p style={{marginTop:"100px", marginLeft:"0"}}>{advice}</p>
+                <img className="guru-img2" src="./images/guru2.png"/> 
                 </div>
             </>
         )

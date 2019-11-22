@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import GuruAnswerDesign from './GuruAnswerDesign'
+
 import axios from 'axios';
 
 
@@ -63,12 +63,15 @@ export class decideAnswer extends Component {
            movieTitle = this.state.randomMovie.title;
         return (
             <>
-            <GuruAnswerDesign/>
+           
             <div className="response-container">
             <p>Nope, not a good idea...</p>
             <p>you should stay home and watch:</p>
             <h3>{movieTitle}</h3>      
-            {this.loadTrailerorNot()}         
+            {this.loadTrailerorNot()}
+            <img className="speech-image" src="./images/speech-bubble.png"/>
+            <img className="guru-img2" src="./images/guru2.png"/> 
+         
             </div> 
             </>
         )}
@@ -80,11 +83,14 @@ export class decideAnswer extends Component {
       drinkImage = this.state.randomDrink.drinks[0].strDrinkThumb
       return (
         <>
-        <GuruAnswerDesign/>
+      
         <div className="response-container">
         <p>Yes, go out and have some fun</p>
         <p>buy yourself a drink, I feel like you need a</p>
         <h3>{drink}</h3>    
+        <img className="speech-image" src="./images/speech-bubble.png"/>
+        <img className="guru-img2" src="./images/guru2.png"/> 
+
         <img src={drinkImage} style={{width:"200px"}}/>         
         </div> 
         </>

@@ -77,6 +77,7 @@ export class thisThatAnswer extends Component {
             </form>
             {optionToShow}
             <img style={{width:"200px"}} src={gifToShow}/>
+            <img className="guru-img2" src="./images/guru2.png"/> 
              <img id="bubble-answer" src="./images/baloon.png"/>
             </div>
         )

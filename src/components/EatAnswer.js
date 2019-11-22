@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import GuruAnswerDesign from './GuruAnswerDesign'
+
 
 let mealToEat;
 let recipe;
@@ -32,8 +32,9 @@ export class EatAnswer extends Component {
         }
         return (
             <>
-             <GuruAnswerDesign/>
+          
             <div className="response-container">
+            <img className="guru-img2" src="./images/guru2.png"/> 
             <h4>Have some {mealToEat}</h4>
             <img style={{width:"100px", borderRadius: "50%"}} src={mealPhoto}/>
             <p>I even found the recipe for you <a href={recipe} target="_blank"> here.</a> </p>
