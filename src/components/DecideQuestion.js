@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Dropdown from './Dropdown'
+import NavBarMobile from './NavBarMobile'
 
 
 const questions =[
@@ -29,9 +30,10 @@ export class decideQuestion extends Component {
     render() {
         return (
             <>
+            <NavBarMobile/>
             <section className="question-section">
-            <img className="guru-img1" src="./images/guru1.png"/>
-            <span>Guru,</span>
+            <img className="guru-img-question" src="./images/guru1.png"/>
+            <span className="guru-word">Guru,</span>
             <Dropdown show={this.state.show} value={this.state.value} handleToggle={this.handleToggle} 
             handleChange={this.handleChange} options={questions}/></section>   
             </>

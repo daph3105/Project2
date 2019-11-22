@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import NavBarMobile from './NavBarMobile'
 
 
 let mealToEat;
@@ -32,15 +33,16 @@ export class EatAnswer extends Component {
         }
         return (
             <>
-          
+            <NavBarMobile/>
             <div className="response-container">
-            <img className="guru-img2" src="./images/guru2.png"/> 
-            <h4>Have some {mealToEat}</h4>
-            <img style={{width:"100px", borderRadius: "50%"}} src={mealPhoto}/>
-            <p>I even found the recipe for you <a href={recipe} target="_blank"> here.</a> </p>
-            <p>Now, don't be lazy and go cook.</p>
             
+            <h4 id="food-title" >Have some {mealToEat}</h4>
+            <img id="food-image"  src={mealPhoto}/>
+            <p id="food-text1" >I even found the recipe for you <a href={recipe} target="_blank"> here.</a> </p>
+            <p id="food-text2" >Now, don't be lazy and go cook.</p>
+            <img className="speech-image" src="./images/speech1.png"/>
             </div>
+            <img className="guru-img2" src="./images/guru2.png"/> 
                
             </>
         )}

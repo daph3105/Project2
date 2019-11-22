@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-
+import NavBarMobile from './NavBarMobile'
 
 
 let advice;
@@ -37,11 +37,12 @@ export class Advice extends Component {
    
         return (
             <>
-               
+               <NavBarMobile/>
                 <div className="response-container">
-                <p style={{marginTop:"100px", marginLeft:"0"}}>{advice}</p>
-                <img className="guru-img2" src="./images/guru2.png"/> 
+                <p id="advice">{advice}</p>
+                <img className="speech-image" src="./images/speech1.png"/>
                 </div>
+                <img className="guru-img2" src="./images/guru2.png"/> 
             </>
         )
     }

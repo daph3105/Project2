@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NavBarMobile from './NavBarMobile'
 
 
 
@@ -66,6 +67,10 @@ export class thisThatAnswer extends Component {
             }
 
         return (
+            <>
+            <NavBarMobile/>
+            
+
             <div className="thisthat-answer">
             <img id="answer-image" src="./images/guru2.png"/>
             
@@ -85,9 +90,8 @@ export class thisThatAnswer extends Component {
             {this.state.bubble ? <img className="speech" src="./images/speech1.png"/>: null}
             
             </div>
-
-          
             </div>
+            </>
         )
     }
 }
