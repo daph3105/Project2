@@ -75,7 +75,7 @@ export class thisThatAnswer extends Component {
             <img id="answer-image" src="./images/guru2.png"/>
             <div className="thisthat-answer">
             <h4 className="guru-pick-text">Guru, pick one for me:</h4>
-            <p><i>Enter below two options, and the Guru will pick one for you:</i></p>
+            <p id="guru-pick-paragraph"><i>Enter below two things, and the Guru will pick one for you:</i></p>
             <form onSubmit={this.mySubmitHandler}>
             <div className="thisthat-input-container">
             <input type="text" name="option1" placeholder="Option 1" value={this.state.option1} onChange={this.setOptions}/>

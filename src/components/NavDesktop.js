@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom';
 import {
     MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
@@ -17,7 +16,7 @@ export class NavDesktop extends Component {
       render() {
         return (
          
-            <MDBNavbar color="indigo" dark expand="md" style={{backgroundColor:"#D43A39"}} className="menu">
+            <MDBNavbar color="indigo" dark expand="md" style={{backgroundColor:"#D43A39"}} className="menu" scrolling fixed="top">
               <MDBNavbarBrand>
                 <strong className="white-text">Guru Assistant</strong>
               </MDBNavbarBrand>

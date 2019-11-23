@@ -51,7 +51,9 @@ export class decideAnswer extends Component {
        trailer = this.state.randomMovie.trailer;          
        embededTrailer = trailer.replace("watch?v=", "embed/");
        finalTrailerLink = embededTrailer.replace("http:", "https:")
-        return <iframe src={finalTrailerLink} allowFullScreen> </iframe> 
+        return (<>
+               <iframe src={finalTrailerLink} allowFullScreen> </iframe> 
+               <a href={finalTrailerLink} id="trailer-link" target="_blank">Link to Trailer</a></>)
                 }
         return <h3 id="synopsis" >Synopsis: {this.state.randomMovie.synopsis}</h3>
            }
@@ -67,11 +69,11 @@ export class decideAnswer extends Component {
            <NavBarMobile/>
            <NavDesktop/>
             <div className="response-container">
-            <p id="stay-home-text" >Nope, not a good idea...<br/>
+            <p id="stay-home-text" >Nope...<br/>
               stay home and watch:</p>
             <h3 id="movie-title">{movieTitle}</h3>      
-            {this.loadTrailerorNot()}
             <img className="speech-image" src="./images/speech1.png"/>
+            {this.loadTrailerorNot()}
             </div> 
             <img className="guru-img2" src="./images/guru2.png"/> 
             </>
