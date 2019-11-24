@@ -611,13 +611,11 @@ font-size:15px;
 
 /**Medium Screen**/
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
 
-.guru-img2{
-    top:410px;
-}
+
 #answer-image{
-    top:400px;
+    top:350px;
     width:280px;    
     left:400px;
 }
@@ -637,10 +635,10 @@ font-size:15px;
 
   /**Large Screen**/
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
 .guru-img2{
-    top:510px;
+    top:465px;
     width:250px;
 }
 #answer-image{
