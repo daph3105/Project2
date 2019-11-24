@@ -182,8 +182,8 @@ body{
     top:480px;
     left:150px;
     width:300px;
-    margin-right: 0;
     position:fixed;
+   
     
     
 }
@@ -367,8 +367,12 @@ iframe{
 
 /* MOBILE */
 @media only screen and (max-width: 600px) {
+html, body {
+    overflow-x: hidden;
+    }
 body{
 background-size: 100% 100%;
+position: relative;
 }
 .home-buttons{
     visibility: hidden;
