@@ -31,6 +31,10 @@ export class thisThatAnswer extends Component {
 
         mySubmitHandler = (event) => {
             event.preventDefault();
+            if (this.state.option1 && this.state.option2){
+                this.setState({
+                    bubble:true
+                })   
             options = [this.state.option1, this.state.option2];
             let random = Math.floor(Math.random() * 2);
             this.setState({guruOption:options[random]})
@@ -45,7 +49,8 @@ export class thisThatAnswer extends Component {
                     randomGif: data
                 },
                 console.log(this.state.randomGif)
-                )})    
+                )})   
+            } 
           }
 
           
@@ -80,7 +85,7 @@ export class thisThatAnswer extends Component {
             <span>OR</span>
             <input type="text" name="option2" placeholder="Option 2" value={this.state.option2} onChange={this.setOptions}/>
             </div>
-            <button className="btn btn-primary" type="submit" onClick={()=>{this.setState({bubble:true})}} > Pick Now </button>
+            <button className="btn btn-primary" type="submit"> Pick Now </button>
             </form>
             <div className="gif-container">    
             {optionToShow}

@@ -200,8 +200,8 @@ body{
 }
 #gif-text{
     z-index:1;
-    margin-left: 580px;
-    margin-top: 260px;
+    left: 580px;
+    top: 260px;
     font-size:20px;
     width:350px;
     position:absolute;
@@ -210,15 +210,15 @@ body{
     width:200px;
     z-index:1;
     border-radius: 40%;
-    margin-left: 650px;
+    left: 650px;
     top: 300px;
     height:150px;
     position:absolute;
 }
 .gif-container{
-    top:40px;
     position:absolute;
-    height:300px;
+    top:60px;
+    left:450px;
 }
 
 #go-out-text{
@@ -314,6 +314,7 @@ iframe{
     width:300px;  
     background-color: white;
     height:40px;
+
 }
   
 .dropdown-btn{
@@ -327,8 +328,9 @@ iframe{
     position: absolute;
     margin: 0;
     padding: 0;
-    width: 300px;
-    height: 150px;
+    width: 299px;
+    height: 200px;
+    top:170px;
     border: none;
     background: white;
     box-shadow: 0 2px 4px 0 rgba(black, .5);
@@ -376,13 +378,13 @@ background-size: 100% 100%;
 }
 
 .guru-img-question{
-    width:300px;
+    width:250px;
     margin-left:54px;
     margin-top:20px;
     }
 .guru-img-home{
-    width:320px;
-    height:auto;
+    width:300px;
+    height:300px;
     margin-right:140px;
     margin-top:20px;
 }
@@ -397,7 +399,7 @@ background-size: 100% 100%;
 .home-h2{
 height:50px;
 margin-top:40px;
-margin-left:100px;
+margin-left:60px;
 width:200px;
 font-size: 30px;
 }
@@ -406,6 +408,11 @@ flex-direction: column;
 }
 .dropdown-container{
     margin-left: 50px;
+}
+
+.dropdown-list{
+ height:80px;
+ top:470px;
 }
 .guru-word{
     margin-left: 50px;
@@ -475,13 +482,13 @@ flex-direction: column;
 }
 
 #answer-image{
-    top:450px;
+    top:520px;
     left:20px;
-    width:180px;
+    width:120px;
     margin-right: 100;    
 }
 .speech{
-    width:330px;
+    width:280px;
     position:absolute;
     left: 80px;
     top: 350px;
@@ -490,18 +497,18 @@ flex-direction: column;
 
 #gif-text{
     z-index:1;
-    margin-left: 130px;
-    margin-top: 400px;
-    font-size:15px;
-    width:250px;
+    left: 130px;
+    top: 390px;
+    font-size:14px;
+    width:200px;
     position:absolute;
 }
 #gif{
-    width:90px;
+    width:70px;
     z-index:1;
     border-radius: 40%;
-    margin-left: 200px;
-    top: 425px;
+    left: 200px;
+    top: 415px;
     height:auto;
     position:absolute;
 }
@@ -534,6 +541,7 @@ iframe{
 }
 #synopsis{
 visibility: hidden;
+width:100px;
 }
 #go-out-text{
     top:50px; 

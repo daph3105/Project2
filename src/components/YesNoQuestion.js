@@ -7,6 +7,10 @@ const questions =[
   {question:"Will I ever find true love?", link:"/answer1"},
   {question:"Second question?", link:"/answer1" },
   {question:"Third question?", link:"/answer1"},
+  {question: "Fourth question?", link:"/answer1"},
+  {question: "Fourth question?", link:"/answer1"},
+  {question: "Fourth question?", link:"/answer1"},
+  {question: "Fourth question?", link:"/answer1"},
   {question: "Fourth question?", link:"/answer1"}]
 
 export class YesNoQuestion extends Component {

@@ -18,13 +18,13 @@ export class NavDesktop extends Component {
          
             <MDBNavbar color="indigo" dark expand="md" style={{backgroundColor:"#D43A39"}} className="menu" scrolling fixed="top"
             className= {this.props.homeMenu}>
-              <MDBNavbarBrand>
-                <strong className="white-text">Guru Assistant</strong>
+              <MDBNavbarBrand> 
+                <MDBNavLink to="/" style={{color:"white"}}><strong className="white-text">Guru Assistant</strong></MDBNavLink>
               </MDBNavbarBrand>
               <MDBNavbarToggler onClick={this.toggleCollapse} />
               <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                 <MDBNavbarNav left>
-                  <MDBNavItem active>
+                  <MDBNavItem>
                   <MDBNavLink to="/yes-no" style={{color:"white"}}>Yes / No Questions</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
