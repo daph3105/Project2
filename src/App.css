@@ -369,9 +369,8 @@ iframe{
 
 
 /* MOBILE */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
 body{
-
 background-size: 100% 100%;
 }
 .home-buttons{
