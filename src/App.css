@@ -216,7 +216,7 @@ body{
     position:absolute;
 }
 .gif-container{
-    position:absolute;
+   position:absolute;
     top:60px;
     left:450px;
 }
@@ -482,8 +482,8 @@ flex-direction: column;
 }
 
 #answer-image{
-    top:520px;
-    left:20px;
+    top:490px;
+    left:40px;
     width:120px;
     margin-right: 100;    
 }
@@ -494,6 +494,11 @@ flex-direction: column;
     top: 350px;
     z-index: 0;
 }
+.gif-container{
+    position:absolute;
+     top:50px;
+     left:50px;
+ }
 
 #gif-text{
     z-index:1;
