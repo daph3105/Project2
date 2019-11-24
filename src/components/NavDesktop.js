@@ -16,7 +16,8 @@ export class NavDesktop extends Component {
       render() {
         return (
          
-            <MDBNavbar color="indigo" dark expand="md" style={{backgroundColor:"#D43A39"}} className="menu" scrolling fixed="top">
+            <MDBNavbar color="indigo" dark expand="md" style={{backgroundColor:"#D43A39"}} className="menu" scrolling fixed="top"
+            className= {this.props.homeMenu}>
               <MDBNavbarBrand>
                 <strong className="white-text">Guru Assistant</strong>
               </MDBNavbarBrand>

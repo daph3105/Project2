@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import NavBarMobile from './NavBarMobile'
 import NavDesktop from './NavDesktop'
 
 
@@ -25,7 +24,6 @@ export class YesorNo extends Component {
     render() {
         return (
             <>
-            <NavBarMobile/>
             <NavDesktop/>
             <div className="response-container">    
             <h1 id="yes-no-text" style={{ textTransform: 'capitalize'}}>{this.state.randomAnswer.answer}...</h1>

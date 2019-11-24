@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Dropdown from './Dropdown'
-import NavBarMobile from './NavBarMobile'
 import NavDesktop from './NavDesktop'
 
 
@@ -31,7 +30,6 @@ export class decideQuestion extends Component {
     render() {
         return (
             <>
-            <NavBarMobile/>
             <NavDesktop/>
             <section className="question-section">
             <img className="guru-img-question" src="./images/guru1.png"/>

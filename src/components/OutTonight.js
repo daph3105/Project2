@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import NavBarMobile from './NavBarMobile'
 import NavDesktop from './NavDesktop'
 
 import axios from 'axios';
@@ -66,7 +65,6 @@ export class decideAnswer extends Component {
            movieTitle = this.state.randomMovie.title;
         return (
             <>
-           <NavBarMobile/>
            <NavDesktop/>
             <div className="response-container">
             <p id="stay-home-text" >Nope...<br/>
@@ -87,7 +85,6 @@ export class decideAnswer extends Component {
       drinkImage = this.state.randomDrink.drinks[0].strDrinkThumb
       return (
         <>
-        <NavBarMobile/>
         <NavDesktop/>
         <div className="response-container">
         <p id="go-out-text" >Yes, go out and have some fun!<br/>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import NavBarMobile from './NavBarMobile'
 import NavDesktop from './NavDesktop'
 
 
@@ -38,7 +37,6 @@ export class Advice extends Component {
    
         return (
             <>
-               <NavBarMobile/>
                <NavDesktop/>
                 <div className="response-container">
                 <p id="advice">{advice}</p>

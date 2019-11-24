@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import NavBarMobile from './NavBarMobile'
 import NavDesktop from './NavDesktop'
 
 
@@ -34,10 +33,8 @@ export class EatAnswer extends Component {
         }
         return (
             <>
-            <NavBarMobile/>
             <NavDesktop/>
             <div className="response-container">
-            
             <h4 id="food-title" >Have some {mealToEat}</h4>
             <img id="food-image"  src={mealPhoto}/>
             <p id="food-text1" >I even found the recipe for you <a href={recipe} target="_blank"> here.</a> </p>

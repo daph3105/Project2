@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import NavBarMobile from './NavBarMobile'
 import NavDesktop from './NavDesktop'
 
 
@@ -69,7 +68,6 @@ export class thisThatAnswer extends Component {
 
         return (
             <>
-            <NavBarMobile/>
             <NavDesktop/>
             
             <img id="answer-image" src="./images/guru2.png"/>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
-import NavBarMobile from './NavBarMobile'
+import NavDesktop from './NavDesktop';
 
 
 export class HomePage extends Component {
@@ -9,10 +9,8 @@ export class HomePage extends Component {
     render() {
         return (
             <>  
-            <NavBarMobile/>
-           
-
-
+            <NavDesktop homeMenu={"home-nav"}/>
+        
 
             <h1 className="home-h1">Are you tired of making decisions on your own?</h1>
             <h2 className="home-h2">Ask the Guru!</h2>

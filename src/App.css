@@ -1,4 +1,9 @@
 
+html{
+    height:100%;
+    width:100%;
+    margin:0;
+}
 body{
     background-repeat: no-repeat;
     background-size: cover;
@@ -6,13 +11,19 @@ body{
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+    height:100%;
+    width:100%;
     
 }
-.hamburger-menu{
+/* .hamburger-menu{
     visibility: hidden;
     z-index: 3;
     position:fixed;
     top:0;
+} */
+
+.home-nav{
+    visibility: hidden;
 }
 #trailer-link{
     visibility: hidden;
@@ -273,7 +284,7 @@ iframe{
 #food-title{
     z-index:1;
     position:absolute;
-    width:400px;
+    width:300px;
     top:150px;
     left:-30px;
     font-size: 20px;
@@ -289,7 +300,7 @@ iframe{
 #food-text2{
     z-index:1;
     position:absolute;
-    width:250px;
+    width:220px;
     top:260px;
     left:60px;
 }
@@ -344,228 +355,293 @@ iframe{
     position: relative;
 }
 .arrow:after {
-      content: '';
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 10px 5px 0 5px;
-      border-color: black transparent transparent transparent;
-      position: absolute;
-      right: 10px;
-      top: 7px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 5px 0 5px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 450px) {
+
+.home-buttons{
+    visibility: hidden;
+}
+.hamburger-menu{
+    visibility: visible;
+}
+.home{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.guru-img-question{
+    width:300px;
+    margin-left:54px;
+    margin-top:20px;
     }
+.guru-img-home{
+    width:320px;
+    height:auto;
+    margin-right:140px;
+    margin-top:20px;
+}
+.home-h1 {
+    font-size: 20px;
+    width:80%;
+    margin-top:100px;
+    margin-left:auto;
 
-    @media only screen and (max-width: 600px) {
-        .menu{
-            visibility: hidden;
-        }
-        .home-buttons{
-           visibility: hidden;
-        }
-        .hamburger-menu{
-            visibility: visible;
-        }
-        .home{
-         margin-left: auto;
-         margin-right: auto;
-         width: 50%;
-        }
+}
 
-        .guru-img-question{
-           width:300px;
-           margin-left:54px;
-           margin-top:20px;
-           }
-        .guru-img-home{
-            width:320px;
-            height:auto;
-            margin-right:140px;
-            margin-top:20px;
-        }
-           .home-h1 {
-              font-size: 20px;
-              width:80%;
-              margin-top:100px;
-              margin-left:auto;
+.home-h2{
+height:50px;
+margin-top:40px;
+margin-left:100px;
+width:200px;
+font-size: 30px;
+}
+.question-section{
+flex-direction: column;
+}
+.dropdown-container{
+    margin-left: 50px;
+}
+.guru-word{
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.response-container{
+    top:200px;
+    left:130px;
+}
+.speech-image{
+    width:350px;
+    position:absolute;
+    left: -80px;
+    top: 0;
+    z-index: 0;
+}
+#yes-no-text{
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+#yes-no-image{
+    margin-top:60px;
+    width: 100px;
+    height:100px;
+    
+}
+.guru-img2{
+    width:150px;
+    top:500px;
+    left:10px;
+    position: fixed;
+
+}
+.guru-pick-text{
+    margin-top:0px;
+    font-size:22px;
+    width:250px;
+}
+#guru-pick-paragraph{
+    margin-top:0px;
+    font-size:18px;
+    width:300px;
+}
+
+.thisthat-answer{
+    display:flex;
+    flex-direction: column;
+    height:300px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top:120px;
+    margin-left:5px;
+    width:350px;
+    
+}
+.thisthat-input-container{
+    width:150px;
+    display:flex;
+    flex-direction: column;
+}
+.thisthat-input-container input{
+    width:300px;
+    height:45px;
+    
+}
+
+#answer-image{
+    top:560px;
+    left:20px;
+    width:180px;
+    margin-right: 100;    
+}
+.speech{
+    width:330px;
+    position:absolute;
+    left: 80px;
+    top: 350px;
+    z-index: 0;
+}
+
+#gif-text{
+    z-index:1;
+    margin-left: 130px;
+    margin-top: 400px;
+    font-size:15px;
+    width:250px;
+    position:absolute;
+}
+#gif{
+    width:90px;
+    z-index:1;
+    border-radius: 40%;
+    margin-left: 200px;
+    top: 425px;
+    height:auto;
+    position:absolute;
+}
+
+#stay-home-text{
+    top:50px; 
+    font-size:12px;
+    width:300px; 
+    left:-30px;
+}
+#movie-title{
+    width:200px;
+    top:100px;
+    left:-10px;
+    font-size: 16px;
+}
+#trailer-link{
+    visibility: visible;
+    z-index:1;
+    position:absolute;
+    width:100px;
+    top:145px;
+    left:100px;
+    font-size: 15px;
+
+}
+iframe{
+    visibility:hidden;
+    width:100px;
+}
+#synopsis{
+visibility: hidden;
+}
+#go-out-text{
+    top:50px; 
+    font-size:12px;
+    width:300px; 
+    left:-30px;
+}
+#drink-text{
+    top:100px;
+    width:200px;
+    font-size:16px;
+    left:-20px;
+    }
+#drink-image{
+    top:90px;
+    left:120px;
+    height:80px;
+    border-radius:50%;
+}
+#advice{
+    margin-top: 70px;
+    height:80px;
+    width:220px;
+    font-size: 14px;
+    left:-20px;
+}
+#food-title{
+width:180px;
+top:60px;
+left:-20px;
+font-size: 15px;
+}
+
+#food-image{
+width:80px;
+top:80px;
+left:140px;
+}
+#food-text1{
+width:150px;
+top:100px;
+left:-20px;
+font-size:15px;
+}
+#food-text2{
+    visibility:hidden;
+}
+
+
+
+}
+/**SMALL SCREEN**/      
+
+@media only screen and (min-width: 767px) {
+    
             
-           }
-        
-           .home-h2{
-            height:50px;
-            margin-top:40px;
-            margin-left:100px;
-            width:200px;
-            font-size: 30px;
-           }
-           .question-section{
-            flex-direction: column;
-        }
-        .dropdown-container{
-            margin-left: 50px;
-        }
-        .guru-word{
-            margin-left: 50px;
-            font-size: 25px;
         }
 
-        .response-container{
-            top:200px;
-            left:130px;
-        }
-        .speech-image{
-            width:350px;
-            position:absolute;
-            left: -80px;
-            top: 0;
-            z-index: 0;
-        }
-        #yes-no-text{
-            font-size: 30px;
-            margin-top: 80px;
-        }
+/**Medium Screen**/
 
-        #yes-no-image{
-            margin-top:60px;
-            width: 100px;
-            height:100px;
-          
-        }
-        .guru-img2{
-            width:150px;
-            top:500px;
-            left:10px;
-            position: fixed;
+  @media only screen and (min-width: 960px) {
 
-        }
-        .guru-pick-text{
-            margin-top:0px;
-            font-size:22px;
-            width:250px;
-        }
-        #guru-pick-paragraph{
-            margin-top:0px;
-            font-size:18px;
-            width:300px;
-        }
+.guru-img2{
+    top:410px;
+}
+#answer-image{
+    top:400px;
+    width:280px;    
+    left:400px;
+}
+.thisthat-answer{
+    margin-top:50px; 
+}
+.gif-container{
+    top:-50px;
+    left:200px;
+    position:absolute;
+    height:300px;
+    width:0px;
+    margin:0px;
+}
 
-        .thisthat-answer{
-            display:flex;
-            flex-direction: column;
-            height:300px;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            margin-top:120px;
-            margin-left:5px;
-            width:350px;
-          
-        }
-        .thisthat-input-container{
-            width:150px;
-            display:flex;
-            flex-direction: column;
-        }
-        .thisthat-input-container input{
-            width:300px;
-            height:45px;
-           
-        }
-      
-        #answer-image{
-            top:560px;
-            left:20px;
-            width:180px;
-            margin-right: 100;    
-        }
-        .speech{
-            width:330px;
-            position:absolute;
-            left: 80px;
-            top: 350px;
-            z-index: 0;
-        }
-      
-        #gif-text{
-            z-index:1;
-            margin-left: 130px;
-            margin-top: 400px;
-            font-size:15px;
-            width:250px;
-            position:absolute;
-        }
-        #gif{
-            width:90px;
-            z-index:1;
-            border-radius: 40%;
-            margin-left: 200px;
-            top: 425px;
-            height:auto;
-            position:absolute;
-        }
-        .gif-container{
-            top:40px;
-            position:absolute;
-            height:300px;
-        }
-        #stay-home-text{
-           top:50px; 
-            font-size:12px;
-            width:300px; 
-            left:-30px;
-        }
-        #movie-title{
-            width:200px;
-            top:100px;
-            left:-10px;
-            font-size: 16px;
-        }
-        #trailer-link{
-            visibility: visible;
-            z-index:1;
-            position:absolute;
-            width:100px;
-            top:145px;
-            left:100px;
-            font-size: 15px;
+  }
 
-        }
-        iframe{
-            visibility:hidden;
-            width:100px;
-        }
-        #synopsis{
-       visibility: hidden;
-        }
-        #go-out-text{
-            top:50px; 
-            font-size:12px;
-            width:300px; 
-            left:-30px;
-        }
-        #drink-text{
-            top:100px;
-            width:200px;
-            font-size:16px;
-            left:-20px;
-            }
-            #drink-image{
-                top:90px;
-                left:120px;
-                height:80px;
-                border-radius:50%;
-            }
-            #advice{
-                margin-top: 70px;
-                height:80px;
-                width:220px;
-                font-size: 14px;
-                left:-20px;
-            }
-        
-        
-     
-      }
+  /**Large Screen**/
 
+  @media only screen and (min-width: 1200px) {
 
+.guru-img2{
+    top:510px;
+    width:250px;
+}
+#answer-image{
+    width:350px;    
+    
+}
+.thisthat-answer{
+    margin-top:50px; 
+}
 
+  }
   
 
