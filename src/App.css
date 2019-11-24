@@ -10,7 +10,7 @@ body{
     background-attachment:fixed;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     height:100%;
     width:100%;
     
@@ -377,7 +377,7 @@ background-size: 100% 100%;
 .home-buttons{
     visibility: hidden;
 }
-.hamburger-menu{
+.home-nav{
     visibility: visible;
 }
 .home{
