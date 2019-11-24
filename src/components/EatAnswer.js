@@ -33,7 +33,7 @@ export class EatAnswer extends Component {
         }
         return (
             <>
-            <NavDesktop/>
+            <NavDesktop activeLink={"nav-item nav-link active"}/>
             <div className="response-container">
             <h4 id="food-title" >Have some {mealToEat}</h4>
             <img id="food-image"  src={mealPhoto}/>

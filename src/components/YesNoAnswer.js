@@ -24,7 +24,7 @@ export class YesorNo extends Component {
     render() {
         return (
             <>
-            <NavDesktop/>
+            <NavDesktop activeLink1={"nav-item nav-link active"}/>
             <div className="response-container">    
             <h1 id="yes-no-text" style={{ textTransform: 'capitalize'}}>{this.state.randomAnswer.answer}...</h1>
             <img id="yes-no-image" src={this.state.randomAnswer.image} />

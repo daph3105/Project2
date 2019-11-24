@@ -65,7 +65,7 @@ export class decideAnswer extends Component {
            movieTitle = this.state.randomMovie.title;
         return (
             <>
-           <NavDesktop/>
+           <NavDesktop activeLink={"nav-item nav-link active"}/>
             <div className="response-container">
             <p id="stay-home-text" >Nope...<br/>
               stay home and watch:</p>
@@ -85,7 +85,7 @@ export class decideAnswer extends Component {
       drinkImage = this.state.randomDrink.drinks[0].strDrinkThumb
       return (
         <>
-        <NavDesktop/>
+        <NavDesktop activeLink={"nav-item nav-link active"}/>
         <div className="response-container">
         <p id="go-out-text" >Yes, go out and have some fun!<br/>
         buy yourself a drink, I feel like you need a...</p>
