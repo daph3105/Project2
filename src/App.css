@@ -38,6 +38,9 @@ body{
     margin-top:40px;
     margin-left:0px;
 }
+.home-buttons button{
+    cursor:pointer;
+}
 
 .home-h1 {
     font-size: 35px;
