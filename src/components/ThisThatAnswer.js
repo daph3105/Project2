@@ -85,7 +85,7 @@ export class thisThatAnswer extends Component {
             <span>OR</span>
             <input type="text" name="option2" placeholder="Option 2" value={this.state.option2} onChange={this.setOptions}/>
             </div>
-            <button className="btn btn-primary" type="submit"> Pick Now </button>
+            <button className="btn btn-danger" type="submit"> Pick Now </button>
             </form>
             <div className="gif-container">    
             {optionToShow}
