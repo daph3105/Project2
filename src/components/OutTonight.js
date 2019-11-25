@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
 import NavDesktop from './NavDesktop'
+import ShareSection from './ShareSection'
 
 import axios from 'axios';
 
+const shareText = "I asked the Guru to decide if I should go out tonight, and he told me to"
+const stayText =" stay home and watch: "
+const outText = " go out and drink a "
+const hash =  "#asktheguru"
+const shareUrl = "https://daph3105.github.io/Project2/#/decide"
 
 let movieTitle;
 let trailer;
@@ -68,12 +74,22 @@ export class decideAnswer extends Component {
            <NavDesktop activeLink={"nav-item nav-link active"}/>
             <div className="response-container">
             <p id="stay-home-text" >Nope...<br/>
-              stay home and watch:</p>
+              {stayText}</p>
             <h3 id="movie-title">{movieTitle}</h3>      
             <img className="speech-image" src="./images/speech1.png"/>
             {this.loadTrailerorNot()}
             </div> 
             <img className="guru-img2" src="./images/guru2.png"/> 
+
+            <ShareSection styleContainer={"share-container"}
+            fbUrl={shareUrl} 
+            fbQuote={shareText + stayText + movieTitle}
+            hashtag={hash}
+            twUrl={shareUrl}
+            twTitle={shareText + stayText + movieTitle}
+            wpUrl={shareUrl}
+            wpTitle={shareText + stayText + movieTitle}
+            />
             </>
         )}
         else return(<div>Loading...</div>)
@@ -94,6 +110,16 @@ export class decideAnswer extends Component {
         <img id="drink-image" src={drinkImage}/>         
         </div> 
         <img className="guru-img2" src="./images/guru2.png"/> 
+
+        <ShareSection styleContainer={"share-container"}
+            fbUrl={shareUrl} 
+            fbQuote={shareText + outText + drink}
+            hashtag={hash}
+            twUrl={shareUrl}
+            twTitle={shareText + outText + drink}
+            wpUrl={shareUrl}
+            wpTitle={shareText + outText + drink}
+            />
         </>
     )}
     else return(<div>Loading...</div>)
@@ -103,3 +129,4 @@ export class decideAnswer extends Component {
 }
 
 export default decideAnswer
+

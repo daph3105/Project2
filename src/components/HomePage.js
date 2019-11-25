@@ -22,7 +22,7 @@ export class HomePage extends Component {
             <Link to="/yes-no" style={{textDecoration:"none", color:"white"}}><button className="btn btn-danger"> Yes / No Questions</button></Link>
             <Link to="/this-that" style={{textDecoration:"none", color:"white"}}><button className="btn btn-danger"> This or That Questions</button></Link>
             <Link to="/decide" style={{textDecoration:"none", color:"white"}}><button className="btn btn-danger"> Let the Guru decide things for you</button></Link>
-            <Link to="/advice" style={{textDecoration:"none", color:"white"}}><button className="btn btn-danger"> Ask the Guru for an Advice</button></Link>
+            <Link to="/advice" style={{textDecoration:"none", color:"white"}}><button className="btn btn-danger">Advice from the Guru</button></Link>
             </section> 
                 <img className="guru-img-home" src="./images/guru1.png"/>
             </div>

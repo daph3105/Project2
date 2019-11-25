@@ -34,7 +34,7 @@ export class NavDesktop extends Component {
                   <MDBNavLink to="/decide" className= {this.props.activeLink}>Let the Guru decide things for you</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                  <MDBNavLink to="/advice" > Ask the Guru for an Advice </MDBNavLink>
+                  <MDBNavLink to="/advice" > Advice from the Guru </MDBNavLink>
                   </MDBNavItem>
                   {/* <MDBNavItem>
                     <MDBDropdown>

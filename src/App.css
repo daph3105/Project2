@@ -172,7 +172,8 @@ body{
     justify-content: flex-end;
     align-content: flex-end;
     margin-left:80px;
-    margin-top:60px;
+    margin-top:30px;
+    
   
 }
 .thisthat-answer button{
@@ -196,18 +197,20 @@ body{
    margin:0;
    width:600px;
 }
+
+
 .speech{
     position: absolute;
-    width:600px;
-    top:170px;
-    left:400px;
+    width:550px;
+    top:110px;
+    left:420px;
     z-index:-1;
 }
 #gif-text{
     z-index:1;
-    left: 580px;
-    top: 260px;
-    font-size:20px;
+    left: 500px;
+    top: 200px;
+    font-size:16px;
     width:350px;
     position:absolute;
 }
@@ -215,16 +218,12 @@ body{
     width:200px;
     z-index:1;
     border-radius: 40%;
-    left: 650px;
-    top: 300px;
+    left: 630px;
+    top: 230px;
     height:150px;
     position:absolute;
 }
-.gif-container{
-   position:absolute;
-    top:60px;
-    left:450px;
-}
+
 
 #go-out-text{
     position:absolute;
@@ -368,10 +367,55 @@ iframe{
     top: 7px;
 }
 
+/*Share section*/
+.share-container{
+    top:10px;
+    left:-10px;
+    position: absolute;
+}
+.this-that-share-container{
+    top:70px;
+    left:-150px;
+    position: absolute;
+}
+
+#share-text{
+    top:500px;
+    left:700px;
+    width:200px;
+    position: absolute;
+    font-size:23px;
+    color:rgba(10, 10, 10, 0.63);
+    margin-left:4px;
+
+}
+.facebook-container {
+    top:550px;
+    left:700px;
+    position: absolute;
+  }
+  .twitter-container {
+    top:550px;
+    left:760px;
+    position: absolute;
+  }
+  .whatsapp-container{
+    top:550px;
+    left:820px;
+    position: absolute;
+}
+  
+  .share-button {
+    cursor: pointer;
+  }
+  #share-eat{
+      visibility: hidden;
+  }
+
 
 
 /* MOBILE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 html, body {
     overflow-x: hidden;
     }
@@ -394,7 +438,7 @@ position: relative;
 .guru-img-home{
     width:auto;
     height:300px;
-    margin-right:140px;
+    margin-right:220px;
     margin-top:20px;
 }
 .home-h1 {
@@ -596,7 +640,7 @@ left:140px;
 }
 #food-text1{
 width:150px;
-top:100px;
+top:120px;
 left:-20px;
 font-size:15px;
 }
@@ -605,18 +649,31 @@ font-size:15px;
 }
 
 
+.share-container{
+    width:150px;
+    top:60px;
+    left:-580px;
+    position: fixed;
+}
+
+
+
 
 }
 /**SMALL SCREEN**/      
 
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 960px) {
+    /* .share-container{
+        top:30px;
+        left:-100px;
+    } */
     
             
         }
 
 /**Medium Screen**/
 
-@media only screen and (min-width: 960px) {
+@media only screen and (max-width: 1199px) {
 
 
 #answer-image{
