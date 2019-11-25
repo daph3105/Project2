@@ -71,6 +71,7 @@ export class EatAnswer extends Component {
             twTitle={shareText + mealToEat + shareText1}
             wpUrl={shareUrl}
             wpTitle={shareText + mealToEat + shareText1}
+            
 
             />
                

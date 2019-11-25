@@ -667,8 +667,8 @@ font-size:15px;
 
 .share-container{
     width:150px;
-    top:10px;
-    left:-580px;
+    top:-30px;
+    left:-550px;
     position: fixed;
 }
 .this-that-share-container{
@@ -678,7 +678,8 @@ font-size:15px;
     position: fixed;
 }
 #share-text{
-
+font-size:15px;
+width:150px;
 }
 
 
