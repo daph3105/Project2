@@ -228,6 +228,15 @@ body{
     height:150px;
     position:absolute;
 }
+#loading-gif{
+    width:100px;
+    z-index:1;
+    border-radius: 40%;
+    left: 520px;
+    top: 240px;
+    height:150px;
+    position:absolute;
+}
 
 
 #go-out-text{
@@ -658,7 +667,7 @@ font-size:15px;
 
 .share-container{
     width:150px;
-    top:60px;
+    top:10px;
     left:-580px;
     position: fixed;
 }
@@ -667,6 +676,9 @@ font-size:15px;
     top:90px;
     left:-530px;
     position: fixed;
+}
+#share-text{
+
 }
 
 
