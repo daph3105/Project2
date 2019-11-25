@@ -386,6 +386,7 @@ iframe{
     top:10px;
     left:-10px;
     position: absolute;
+    
 }
 .this-that-share-container{
     top:70px;
@@ -401,6 +402,7 @@ iframe{
     font-size:23px;
     color:rgba(10, 10, 10, 0.63);
     margin-left:4px;
+    
 
 }
 .facebook-container {
@@ -549,14 +551,14 @@ flex-direction: column;
 }
 
 #answer-image{
-    top: 540px;
+    top: 480px;
     left:20px;
     width:150px;
     position:fixed;
     
 }
 .speech{
-    width:280px;
+    width:250px;
     position:absolute;
     left: 80px;
     top: 350px;
@@ -564,26 +566,26 @@ flex-direction: column;
 }
 .gif-container{
     width:550px;
-    top:50px;
-    left:50px;
+    top:10px;
+    left:100px;
     
  }
 
 #gif-text{
     z-index:1;
-    left: 130px;
+    left: 120px;
     top: 390px;
-    font-size:14px;
-    width:200px;
+    font-size:12px;
+    width:170px;
     position:absolute;
 }
 #gif{
-    width:70px;
+    width:auto;
     z-index:1;
     border-radius: 40%;
-    left: 200px;
-    top: 415px;
-    height:auto;
+    left: 180px;
+    top: 408px;
+    height:70px;
     position:absolute;
 }
 
@@ -673,7 +675,7 @@ font-size:15px;
 }
 .this-that-share-container{
     width:150px;
-    top:90px;
+    top:25px;
     left:-530px;
     position: fixed;
 }
