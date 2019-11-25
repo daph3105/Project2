@@ -185,17 +185,22 @@ body{
 }
 
 #answer-image{
-    top:480px;
-    left:150px;
+    top:350px;
+    left:350px;
     width:300px;
     position:fixed;
-   
-    
-    
+  
 }
 #bubble-answer{
    margin:0;
    width:600px;
+}
+
+.gif-container{
+    position: absolute;
+    width:550px;
+    top:-30px;
+    left:200px;
 }
 
 
@@ -502,7 +507,7 @@ flex-direction: column;
 
 }
 .guru-pick-text{
-    margin-top:0px;
+    margin-top:24px;
     font-size:22px;
     width:250px;
 }
@@ -518,7 +523,7 @@ flex-direction: column;
     height:300px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top:120px;
+    margin-top:100px;
     margin-left:5px;
     width:350px;
     
@@ -535,10 +540,11 @@ flex-direction: column;
 }
 
 #answer-image{
-    top:490px;
-    left:40px;
-    width:120px;
-    margin-right: 100;    
+    top: 540px;
+    left:20px;
+    width:150px;
+    position:fixed;
+    
 }
 .speech{
     width:280px;
@@ -548,9 +554,10 @@ flex-direction: column;
     z-index: 0;
 }
 .gif-container{
-    position:absolute;
-     top:50px;
-     left:50px;
+    width:550px;
+    top:50px;
+    left:50px;
+    
  }
 
 #gif-text{
@@ -655,14 +662,19 @@ font-size:15px;
     left:-580px;
     position: fixed;
 }
-
+.this-that-share-container{
+    width:150px;
+    top:90px;
+    left:-530px;
+    position: fixed;
+}
 
 
 
 }
 /**SMALL SCREEN**/      
 
-@media only screen and (max-width: 960px) {
+@media only screen and (min-width: 768px) {
     /* .share-container{
         top:30px;
         left:-100px;
@@ -673,7 +685,7 @@ font-size:15px;
 
 /**Medium Screen**/
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 960px) {
 
 
 #answer-image{
