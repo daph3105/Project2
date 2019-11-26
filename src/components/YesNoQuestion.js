@@ -1,18 +1,8 @@
 import React, { Component } from 'react'
-import Dropdown from "./Dropdown"
 import NavDesktop from './NavDesktop'
 import {Link} from 'react-router-dom';
 
 
-// const questions =[
-//   {question:"Will I ever find true love?", link:"/answer1"},
-//   {question:"Second question?", link:"/answer1" },
-//   {question:"Third question?", link:"/answer1"},
-//   {question: "Fourth question?", link:"/answer1"},
-//   {question: "Fourth question?", link:"/answer1"},
-//   {question: "Fourth question?", link:"/answer1"},
-//   {question: "Fourth question?", link:"/answer1"},
-//   {question: "Fourth question?", link:"/answer1"}]
 
 export class YesNoQuestion extends Component {
   constructor(props) {
@@ -25,22 +15,6 @@ export class YesNoQuestion extends Component {
 myChangeHandler = (event) => {
   this.setState({question: event.target.value});
 }
-
-    // constructor (props) {
-    //     super(props);
-    //     this.state = {
-    //       show: false,
-    //     };
-    //   }
-    
-    //   handleToggle = (e) => {
-    //     e.target.focus();
-    //     this.setState({ show: !this.state.show });
-    //   }
-    
-    // handleChange = (question) => () => {
-    //     this.setState({ value: question, show: false });
-    //   }
 
 
 
@@ -67,8 +41,7 @@ myChangeHandler = (event) => {
             </div>
            
            
-            {/* <Dropdown show={this.state.show} value={this.state.value} handleToggle={this.handleToggle} 
-            handleChange={this.handleChange} options={questions}/> */}
+
              
             </>
         )
