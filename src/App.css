@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Quicksand', sans-serif;
+}
 html{
     height:100%;
     width:100%;
@@ -74,6 +76,63 @@ body{
     animation: mover 2s infinite  alternate;
     width:500px;
 }
+.baloon-container{
+    position:absolute;
+    width:800px;
+    top:250px;
+    left:500px;
+}
+.baloon-container-decide{
+    position:absolute;
+    width:800px;
+    top:160px;
+    left:500px;
+}
+#baloon1{
+    position:absolute;
+    left:470px;
+    top:-80px;
+}
+#baloon1:hover{
+    filter: saturate(8);
+    transform: scale(1.2);
+}
+#baloon2{
+    position:absolute;
+    left:500px;
+    top:210px;
+}
+#baloon2:hover{
+    filter: saturate(8);
+    transform: scale(1.2);
+}
+#baloon3{
+    position:absolute;
+    top:230px;
+    left:50px;
+    
+}
+#baloon3:hover{
+    filter: saturate(8);
+    transform: scale(1.2);
+}
+#baloon4{
+    position:absolute;
+    left:270px;
+    top:40px;
+}
+#baloon4:hover{
+    filter: saturate(8);
+    transform: scale(1.2);
+}
+#baloon5{
+    position:absolute;
+    top:20px;
+}
+#baloon5:hover{
+    filter: saturate(8);
+    transform: scale(1.2);
+}
 
 .answer-section{
     margin-left: auto;
@@ -129,6 +188,7 @@ body{
 
 
 
+
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-20px); }
@@ -140,11 +200,24 @@ body{
 
 .question-section{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top:130px;
+    width:950px;
+    flex-wrap: wrap;
+    height: 500px;
+    margin-left:10px;
 }
+#yes-no-question{
+    width:300px;
+    height:40px;
 
+}
+#btn-question{
+    width:100px;
+    height:40px;
 
+}
 
 
 .thisthat-input-container{
@@ -380,6 +453,21 @@ iframe{
     right: 10px;
     top: 7px;
 }
+#watch-text{
+    z-index:1;
+    position:absolute;
+    width:250px;
+    top:130px;
+    left:-40px;
+}
+
+#poster-image{
+    height:200px;
+    width:auto;
+    top:105px;
+    left:280px;
+    position: absolute;
+}
 
 /*Share section*/
 .share-container{
@@ -472,9 +560,11 @@ margin-left:60px;
 width:200px;
 font-size: 30px;
 }
+
 .question-section{
 flex-direction: column;
 }
+
 .dropdown-container{
     margin-left: 50px;
 }

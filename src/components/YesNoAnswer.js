@@ -4,13 +4,14 @@ import NavDesktop from './NavDesktop'
 import ShareSection from './ShareSection'
 
 
-const shareText = "I asked the Guru: Will I ever find true love? And the answer was: ";
+const shareText = "I asked the Guru:";
+
 const hash = "#asktheguru"
 const shareUrl = "https://daph3105.github.io/Project2/#/yes-no"
 
 
 export class YesorNo extends Component {
-
+  
     constructor(props){
         super(props);
         this.state = {

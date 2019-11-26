@@ -1,44 +1,75 @@
 import React, { Component } from 'react'
 import Dropdown from "./Dropdown"
 import NavDesktop from './NavDesktop'
+import {Link} from 'react-router-dom';
 
 
-const questions =[
-  {question:"Will I ever find true love?", link:"/answer1"},
-  {question:"Second question?", link:"/answer1" },
-  {question:"Third question?", link:"/answer1"},
-  {question: "Fourth question?", link:"/answer1"},
-  {question: "Fourth question?", link:"/answer1"},
-  {question: "Fourth question?", link:"/answer1"},
-  {question: "Fourth question?", link:"/answer1"},
-  {question: "Fourth question?", link:"/answer1"}]
+// const questions =[
+//   {question:"Will I ever find true love?", link:"/answer1"},
+//   {question:"Second question?", link:"/answer1" },
+//   {question:"Third question?", link:"/answer1"},
+//   {question: "Fourth question?", link:"/answer1"},
+//   {question: "Fourth question?", link:"/answer1"},
+//   {question: "Fourth question?", link:"/answer1"},
+//   {question: "Fourth question?", link:"/answer1"},
+//   {question: "Fourth question?", link:"/answer1"}]
 
 export class YesNoQuestion extends Component {
-    constructor (props) {
-        super(props);
-        this.state = {
-          show: false,
-        };
-      }
+  constructor(props) {
+    super(props);
+    this.state = {
+        question: ''
+     
+    }
+}
+myChangeHandler = (event) => {
+  this.setState({question: event.target.value});
+}
+
+    // constructor (props) {
+    //     super(props);
+    //     this.state = {
+    //       show: false,
+    //     };
+    //   }
     
-      handleToggle = (e) => {
-        e.target.focus();
-        this.setState({ show: !this.state.show });
-      }
+    //   handleToggle = (e) => {
+    //     e.target.focus();
+    //     this.setState({ show: !this.state.show });
+    //   }
     
-    handleChange = (question) => () => {
-        this.setState({ value: question, show: false });
-      }
+    // handleChange = (question) => () => {
+    //     this.setState({ value: question, show: false });
+    //   }
+
+
+
     render() {
         return (
             <>
              <NavDesktop/>
             <section className="question-section">
             <img className="guru-img-question" src="./images/guru1.png"/>
-            <span className="guru-word">Guru,</span>
-            <Dropdown show={this.state.show} value={this.state.value} handleToggle={this.handleToggle} 
-            handleChange={this.handleChange} options={questions}/>
-            </section>   
+
+            <h3>Type your Yes/No question below,</h3>
+            <p>or click on one of the frequently asked questions to ask the Guru.</p>
+            <div>
+            <input id="yes-no-question" type="text" name="yes-no-question" placeholder= "Guru..." value = {this.state.question} onChange = {this.myChangeHandler}/>
+            <Link to="/answer1" style={{textDecoration:"none", color:"white"}}><button className= "btn btn-danger" id="btn-question" type = "submit"> Ask </button></Link>
+            </div>
+            </section> 
+            <div className="baloon-container">
+            <Link to="/answer1"> <input id="baloon1" type="image" src="./images/questionimg1.png" alt="find love" width="238" height="208"/> </Link>
+            <Link to="/answer1"> <input id="baloon2" type="image" src="./images/questionimg2.png" alt="quit job" width="248" height="208"></input> </Link>
+            <Link to="/answer1"> <input id="baloon3" type="image" src="./images/questionimg3.png" alt="be rich" width="258" height="208"></input>  </Link>
+            <Link to="/answer1"> <input id="baloon4" type="image" src="./images/questionimg4.png" alt="stay or go" width="258" height="208"></input>  </Link>
+            <Link to="/answer1"> <input id="baloon5" type="image" src="./images/questionimg5.png" alt="send text" width="258" height="208"></input> </Link>
+            </div>
+           
+           
+            {/* <Dropdown show={this.state.show} value={this.state.value} handleToggle={this.handleToggle} 
+            handleChange={this.handleChange} options={questions}/> */}
+             
             </>
         )
     }
