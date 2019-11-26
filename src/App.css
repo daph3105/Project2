@@ -470,6 +470,12 @@ iframe{
     top:130px;
     left:-40px;
 }
+#show-text{
+position:absolute;
+z-index:1;
+top:190px;
+width:200px;
+}
 
 #poster-image{
     height:200px;
@@ -803,6 +809,27 @@ width:150px;
  height:150px;
  width:auto;
  margin-left:110px;
+}
+
+#watch-text{
+width:200px;
+font-size:15px;
+top:60px;
+left:-20px;
+
+}
+#show-text{
+font-size:20px;
+top:100px;
+width:200px;
+}
+
+#poster-image{
+    height:80px;
+    width:auto;
+    top:80px;
+    left:120px;
+    position: absolute;
 }
 
 .baloon-container{

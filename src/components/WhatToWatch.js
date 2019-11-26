@@ -102,7 +102,7 @@ export class WhatToWatch extends Component {
          <NavDesktop activeLink={"nav-item nav-link active"}/>
          <div className="response-container">
          <p id="watch-text" >You should watch the show:</p>
-         <h3 id="drink-text">{showTitle}</h3>    
+         <h3 id="show-text">{showTitle}</h3>    
          <img className="speech-image" src="./images/speech1.png"/>
          <img id="poster-image" src={showPoster}/> 
          </div> 
