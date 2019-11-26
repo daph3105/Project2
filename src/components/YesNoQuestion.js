@@ -26,7 +26,7 @@ myChangeHandler = (event) => {
             <img className="guru-img-question" id="yes-noimg" src="./images/guru1.png"/>
 
             <h3 id="yes-no-title">Type your Yes/No question below,</h3>
-            <p id="yes-noP">or click on one of the frequently asked questions to ask the Guru.</p>
+            <p id="yes-noP">or click on one of the FAQs to ask the Guru.</p>
             <div>
             <input id="yes-no-question" type="text" name="yes-no-question" placeholder= "Guru..." value = {this.state.question} onChange = {this.myChangeHandler}/>
             <Link to="/answer1" style={{textDecoration:"none", color:"white"}}><button className= "btn btn-danger" id="btn-question" type = "submit"> Ask </button></Link>
