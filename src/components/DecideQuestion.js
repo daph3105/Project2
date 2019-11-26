@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
-import Dropdown from './Dropdown'
 import NavDesktop from './NavDesktop'
 import {Link} from 'react-router-dom';
 
 
-// const questions =[
-//   {question:"Should I go out tonight?", link:"/answer3"},
-//   {question:"I'm hungry, what should I eat?", link:"/eat" },
-//   {question:"Third question?", link:"/answer1"},
-//   {question: "Fourth question?", link:"/answer3"}]
+
 
 export class decideQuestion extends Component {
     // constructor (props) {

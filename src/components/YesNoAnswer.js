@@ -4,8 +4,8 @@ import NavDesktop from './NavDesktop'
 import ShareSection from './ShareSection'
 
 
-const shareText = "I asked the Guru:";
-
+const shareText = "I asked the Guru: "
+const shareText2 = " and he said: "
 const hash = "#asktheguru"
 const shareUrl = "https://daph3105.github.io/Project2/#/yes-no"
 
@@ -29,12 +29,14 @@ export class YesorNo extends Component {
         });
       }
     render() {
+        let question = this.props.question || '';
+        
         return (
             <>
             <NavDesktop activeLink1={"nav-item nav-link active"}/>
 
-
-            <div className="response-container">    
+            <div className="response-container">   
+  
             <h1 id="yes-no-text" style={{ textTransform: 'capitalize'}}>{this.state.randomAnswer.answer}...</h1>
             <img id="yes-no-image" src={this.state.randomAnswer.image} />
             <img className="speech-image" src="./images/speech1.png"/>
@@ -44,12 +46,12 @@ export class YesorNo extends Component {
 
             <ShareSection styleContainer={"share-container"} 
             fbUrl={shareUrl} 
-            fbQuote={shareText + this.state.randomAnswer.answer}
+            fbQuote={shareText + question + shareText2 + this.state.randomAnswer.answer}
             hashtag={hash}
             twUrl={shareUrl}
-            twTitle={shareText + this.state.randomAnswer.answer}
+            twTitle={shareText + question + shareText2 + this.state.randomAnswer.answer}
             wpUrl={shareUrl}
-            wpTitle={shareText + this.state.randomAnswer.answer}
+            wpTitle={shareText + question + shareText2 + this.state.randomAnswer.answer}
 
             />
         

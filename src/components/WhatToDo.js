@@ -17,7 +17,7 @@ export class WhatToDo extends Component {
         }
 
         componentDidMount() {
-            axios.get(`http://www.boredapi.com/api/activity/`)
+            axios.get(`https://www.boredapi.com/api/activity/`)
             .then(response => {
               this.setState({ randomActivity:response.data });
               console.log(this.state.randomActivity)
