@@ -383,6 +383,8 @@ body{
     margin-right: 10px;
     border: solid #D43A39 2px;
     color:#D43A39;
+    border-radius: 5px;
+    height:40px;
 }
 .thisthat-input-container span{
     margin-right: 10px;
@@ -404,6 +406,9 @@ body{
 .thisthat-answer button{
     margin-top:20px;
     width:150px;
+    height:40px;
+    position: absolute;
+    z-index:2;
 }
 .guru-pick-text{
     margin-top:40px;
@@ -776,29 +781,31 @@ font-size: 30px;
 
 }
 .guru-pick-text{
-    margin-top:24px;
-    font-size:22px;
-    width:250px;
+  visibility: hidden;
+   width:0;
+   margin-top:0;
 }
 #guru-pick-paragraph{
     margin-top:0px;
     font-size:18px;
     width:300px;
+    height:50px;
+    margin-left:0;
 }
 
 .thisthat-answer{
     display:flex;
     flex-direction: column;
-    height:300px;
+    height:400px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top:100px;
-    margin-left:5px;
-    width:350px;
+    margin-top:0;
+    margin-left:50px;
+    width:300px;
     
 }
 .thisthat-input-container{
-    width:150px;
+    width:300px;
     display:flex;
     flex-direction: column;
 }
@@ -818,21 +825,21 @@ font-size: 30px;
 .speech{
     width:250px;
     position:absolute;
-    left: 80px;
-    top: 350px;
+    left: 30px;
+    top: 360px;
     z-index: 0;
 }
 .gif-container{
-    width:550px;
-    top:10px;
-    left:100px;
+    width:500px;
+    top:5px;
+    left:60px;
     
  }
 
 #gif-text{
     z-index:1;
-    left: 120px;
-    top: 390px;
+    left: 80px;
+    top: 400px;
     font-size:12px;
     width:170px;
     position:absolute;
@@ -841,9 +848,9 @@ font-size: 30px;
     width:auto;
     z-index:1;
     border-radius: 40%;
-    left: 180px;
-    top: 408px;
-    height:70px;
+    left: 130px;
+    top: 418px;
+    height:60px;
     position:absolute;
 }
 

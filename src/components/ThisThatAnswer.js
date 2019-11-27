@@ -1,6 +1,4 @@
-import React, {
-    Component
-} from 'react'
+import React, {Component} from 'react'
 import NavDesktop from './NavDesktop'
 import ShareSection from './ShareSection'
 
