@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-import {Switch, Link, Route} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import HomePage from './components/HomePage.js'
 import YesNoQuestion from './components/YesNoQuestion';
 import YesNoAnswer from './components/YesNoAnswer';
@@ -11,6 +11,8 @@ import OutTonight from './components/OutTonight';
 import EatAnswer from './components/EatAnswer';
 import WhatToDo from './components/WhatToDo';
 import WhatToWatch from './components/WhatToWatch';
+import WhatToListen from './components/WhatToListen';
+
 
 
 export class App extends Component {
@@ -23,16 +25,16 @@ this.setState({question})
     return (
      <>
           <div id="background-wrap">
-              <div class="x1">
-                  <div class="cloud"></div>
+              <div className="x1">
+                  <div className="cloud"></div>
               </div>
 
-              <div class="x2">
-                  <div class="cloud"></div>
+              <div className="x2">
+                  <div className="cloud"></div>
               </div>
 
-              <div class="x3">
-                  <div class="cloud"></div>
+              <div className="x3">
+                  <div className="cloud"></div>
               </div>
           </div>   
 <Switch>
@@ -47,6 +49,7 @@ this.setState({question})
 <Route exact path="/advice" render={() => <Advice/>} />
 <Route exact path="/answer7" render={() => <WhatToDo/> }/>
 <Route exact path="/answer8" render={() => <WhatToWatch/> }/>
+<Route exact path="/answer9" render={() => <WhatToListen/>}/>
 
 </Switch>
 

@@ -664,6 +664,14 @@ width:200px;
   #share-eat{
       visibility: hidden;
   }
+  #song-link{
+    z-index:1;
+    position:absolute;
+    width:150px;
+    top:255px;
+    left:120px;
+    font-size: 25px;
+  }
 
 
 
@@ -850,6 +858,14 @@ font-size: 30px;
     left:100px;
     font-size: 15px;
 
+}
+#song-link{
+z-index:1;
+position:absolute;
+width:100px;
+top:145px;
+left:100px;
+font-size: 15px; 
 }
 iframe{
     visibility:hidden;

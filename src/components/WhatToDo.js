@@ -5,7 +5,7 @@ import ShareSection from './ShareSection'
 
 const shareText = "I asked the Guru to decide what I should do now, and he replied with: "
 const hash =  "#asktheguru"
-const shareUrl = "https://daph3105.github.io/Project2/#/advice"
+const shareUrl = "https://daph3105.github.io/Project2/#/decide"
 
 let activity;
 export class WhatToDo extends Component {

@@ -6,21 +6,7 @@ import {Link} from 'react-router-dom';
 
 
 export class decideQuestion extends Component {
-    // constructor (props) {
-    //     super(props);
-    //     this.state = {
-    //       show: false,
-    //     };
-    //   }
-    
-    //   handleToggle = (e) => {
-    //     e.target.focus();
-    //     this.setState({ show: !this.state.show });
-    //   }
-    
-    // handleChange = (question) => () => {
-    //     this.setState({ value: question, show: false });
-    //   }    
+   
     
     
     render() {
@@ -38,8 +24,7 @@ export class decideQuestion extends Component {
             <Link to="/answer7"> <input id="baloon5" type="image" src="./images/questionimg10.png" alt="what to do"/></Link>
             </div>
 
-            {/* <Dropdown show={this.state.show} value={this.state.value} handleToggle={this.handleToggle} 
-            handleChange={this.handleChange} options={questions}/> */}
+     
             
             </section>   
             </>

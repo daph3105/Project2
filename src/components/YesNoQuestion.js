@@ -10,6 +10,7 @@ const questions = [
     "Should I send the text?"
 ]
 let askButtonLink
+
 export class YesNoQuestion extends Component {
   constructor(props) {
     super(props);
