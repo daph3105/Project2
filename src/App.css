@@ -717,7 +717,18 @@ width:200px;
     left:120px;
     font-size: 25px;
   }
-
+.back-button{
+    position:absolute;
+    top:530px;
+    left:500px;
+    width:100px;
+    cursor: pointer;
+}
+.back-button:hover{
+    filter: saturate(8);
+    transform: scale(1.2);
+    
+}
 
 
 /* MOBILE */
@@ -1097,6 +1108,9 @@ left:-20px;
 #baloon5:hover{
     filter: saturate(8);
     transform: scale(1.2);
+}
+.back-button{
+   visibility: hidden;
 }
 
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import NavDesktop from './NavDesktop'
 import ShareSection from './ShareSection'
+import {Link} from 'react-router-dom';
 
 
 const shareText = "I asked the Guru: "
@@ -52,8 +53,8 @@ export class YesorNo extends Component {
             twTitle={shareText + question + shareText2 + this.state.randomAnswer.answer}
             wpUrl={shareUrl}
             wpTitle={shareText + question + shareText2 + this.state.randomAnswer.answer}
-
             />
+            <Link to to="/yes-no"><img className="back-button" src="./images/back-button.png" data-toggle="tooltip" title="go back" alt="go back"/></Link>
         
             </>
         )

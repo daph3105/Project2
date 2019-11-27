@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import NavDesktop from './NavDesktop'
 import ShareSection from './ShareSection'
+import {Link} from 'react-router-dom';
 
 
 let mealToEat;
@@ -71,10 +72,8 @@ export class EatAnswer extends Component {
             twTitle={shareText + mealToEat + shareText1}
             wpUrl={shareUrl}
             wpTitle={shareText + mealToEat + shareText1}
-            
-
             />
-               
+            <Link to to="/decide"><img className="back-button" src="./images/back-button.png" data-toggle="tooltip" title="go back" alt="go back"/></Link>   
             </>
         )}
 

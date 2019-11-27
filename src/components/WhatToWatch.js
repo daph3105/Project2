@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NavDesktop from './NavDesktop'
 import ShareSection from './ShareSection'
+import {Link} from 'react-router-dom';
 
 const shareText = "I asked the Guru to decide what I should watch, and he recommended: "
 const hash =  "#asktheguru"
@@ -83,6 +84,7 @@ export class WhatToWatch extends Component {
              wpUrl={shareUrl}
              wpTitle={shareText + movieTitle}
              />
+             <Link to to="/decide"><img className="back-button" src="./images/back-button.png" data-toggle="tooltip" title="go back" alt="go back"/></Link>
              </>
          )}
          else return(<div>Loading...</div>)
@@ -117,6 +119,7 @@ export class WhatToWatch extends Component {
              wpUrl={shareUrl}
              wpTitle={shareText + showTitle}
              />
+        <Link to to="/decide"><img className="back-button" src="./images/back-button.png" data-toggle="tooltip" title="go back" alt="go back"/></Link>
          </>
      )}
      else return(<div>Loading...</div>)

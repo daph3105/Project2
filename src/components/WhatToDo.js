@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import NavDesktop from './NavDesktop'
 import ShareSection from './ShareSection'
+import {Link} from 'react-router-dom';
 
 const shareText = "I asked the Guru to decide what I should do now, and he replied with: "
 const hash =  "#asktheguru"
@@ -53,6 +54,7 @@ export class WhatToDo extends Component {
                 wpTitle= {shareText + activity}
 
                 />
+<Link to to="/decide"><img className="back-button" src="./images/back-button.png" data-toggle="tooltip" title="go back" alt="go back"/></Link>
             </>
         )
     }

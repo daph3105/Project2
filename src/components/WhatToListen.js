@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import NavDesktop from './NavDesktop'
 import ShareSection from './ShareSection'
+import {Link} from 'react-router-dom';
 
 let randomWords = require('random-words');
 let song;
@@ -72,6 +73,7 @@ componentDidMount() {
                 wpTitle= {shareText + song + shareText2 + linkToSong}
 
 />
+<Link to to="/decide"><img className="back-button" src="./images/back-button.png" data-toggle="tooltip" title="go back" alt="go back"/></Link>
                 
             </>
         )
