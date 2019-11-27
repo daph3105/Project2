@@ -25,6 +25,7 @@ export class HomePage extends Component {
             <Link to="/advice" style={{textDecoration:"none", color:"white"}}><button className="btn btn-danger">Advice from the Guru</button></Link>
             </section> 
                 <img className="guru-img-home" src="./images/guru1.png"/>
+                <img className="guru-talk" src="./images/guru-talk.png"/>
             </div>
             </>
         )
