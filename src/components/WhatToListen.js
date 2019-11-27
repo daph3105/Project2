@@ -54,7 +54,7 @@ componentDidMount() {
             <NavDesktop/>
 
                 <div className="response-container">
-                <p id="advice">{song} by {artist}</p>
+                <p id="advice">Listen to {song} by {artist}</p>
                 <a href={linkToSong} id="song-link" target="_blank">Listen Here</a>
                 <img className="speech-image" src="./images/speech1.png"/>
                 </div>
