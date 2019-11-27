@@ -26,7 +26,10 @@ export class Advice extends Component {
           console.log(error);
         });
       }    
-      
+    
+    refreshPage = () => {
+        window.location.reload(false);
+      }  
  
     
     
@@ -61,6 +64,7 @@ export class Advice extends Component {
         wpTitle= {shareText + advice}
 
         />
+        <button className="btn btn-danger" id="another-advice" onClick={this.refreshPage}>Give me another one!</button>
 
             </>
         )

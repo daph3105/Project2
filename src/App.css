@@ -367,6 +367,12 @@ body{
     width:400px;
     font-size: 25px;
 }
+#another-advice{
+    position: absolute;
+    left:450px;
+    top:550px;
+    padding:10px;
+}
 
 
 
@@ -965,6 +971,15 @@ width:100px;
     width:220px;
     font-size: 14px;
     left:-20px;
+}
+#another-advice{
+
+    left:245px;
+    top:400px;
+    padding:6px;
+    width:120px;
+    font-size:12px;
+ 
 }
 #food-title{
 width:180px;
