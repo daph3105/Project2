@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://daph3105.github.io/Project2/",
+  "homepage": "http://guruassistant.daphnefvf.co/",
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
