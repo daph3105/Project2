@@ -2,6 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [Live DEMO](https://daph3105.github.io/Project2/#/)
 
+## Description
+A humorous web app where a Guru answers questions and decides things for the user.
+Technologies Used: React.js, JSX, CSS, Bootstrap, 10 different APIs.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
