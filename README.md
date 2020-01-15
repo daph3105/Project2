@@ -1,11 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[Live DEMO](https://daph3105.github.io/Project2/#/)
 
 ## Description
 A humorous web app where a Guru answers questions and decides things for the user.
 Technologies Used: React.js, JSX, CSS, Bootstrap, 10 different APIs.
 
+
+[Live DEMO](https://daph3105.github.io/Project2/#/)
+
+The site is divided in 4 different sections:
+
+1. Yes/ No Questions: The Guru answers YES or NO questions with the help of a gif, you can click on one of the popular questions or type your own.
+2. This or That questions: If you are undecided between 2 things, you can ask the Guru to pick one for you, for example if you don't know whether to eat Italian food or Mexican food, you can type it out and click Pick Now to ask the Guru to pick one for you. 
+3. Let the Guru decide things for you: The Guru can tell you what to do, what to watch ( with description or youtube trailer), what to listen (with a link to the song), what to eat ( with a link to the recipe), and if you should stay home of go out, and a suggestion on what to do if you stay or leave.
+4. Advice from the Guru: you can click to ask the Guru for as many advices as you want.
 
 ## Available Scripts
 
