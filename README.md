@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[Live DEMO](https://daph3105.github.io/Project2/#/)
 
 ## Description
 A humorous web app where a Guru answers questions and decides things for the user.
@@ -15,8 +16,6 @@ Technologies Used: React.js, JSX, CSS, Bootstrap, 10 different APIs:
 9. https://api.giphy.com
 10. https://www.wordsapi.com/docs/
 
-
-[Live DEMO](https://daph3105.github.io/Project2/#/)
 
 The site is divided in 4 different sections:
 
