@@ -3,7 +3,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 A humorous web app where a Guru answers questions and decides things for the user.
-Technologies Used: React.js, JSX, CSS, Bootstrap, 10 different APIs.
+Technologies Used: React.js, JSX, CSS, Bootstrap, 10 different APIs:
+1. https://www.programmableweb.com/api/yes-or-no
+2. https://www.programmableweb.com/api/advice-slip
+3. https://www.themealdb.com/api.php
+4. https://www.thecocktaildb.com/api.php
+5. https://popcornofficial.docs.apiary.io/#reference/movie
+6. https://popcornofficial.docs.apiary.io/#reference/show
+7. http://www.boredapi.com/
+8. https://www.last.fm/api/
+9. https://api.giphy.com
+10. https://www.wordsapi.com/docs/
 
 
 [Live DEMO](https://daph3105.github.io/Project2/#/)
